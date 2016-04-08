@@ -43,10 +43,6 @@ RSpec.describe "The FlightSchool application" do
       expect(last_response).to be_not_found
   end
 
-  it "should fail" do
-      expect(true).to be_falsey
-  end
-
   it "has a JSON API" do
     get "/api/airports/SFO"
     expect(last_response).to be_ok
